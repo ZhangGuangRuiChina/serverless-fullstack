@@ -1,0 +1,62 @@
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  background: var(--mainBg);
+  font-family: 'serverless', 'HelveticaNeue-Regular', 'Helvetica Neue Regular',
+    'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  word-wrap: break-word;
+  letter-spacing: 0.25px;
+}
+
+.container {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px;
+  width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+section.title {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+  height: 360px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+
+/**
+ * Animations
+ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
