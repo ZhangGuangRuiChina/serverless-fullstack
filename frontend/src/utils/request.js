@@ -14,10 +14,12 @@ service.interceptors.request.use(
   config => {
     // do something before request is sent
     const url = config.url;
-    if (hostname !== 'localhost') {
-      config.url = serverUrl + url;
-    } else {
+    
+    // 本地开发使用本地代理服务
+    if (hostname === 'localhost') {
       config.url = `/sls${url}`
+    } else {
+      config.url = serverUrl + url;
     }
     return config
   },

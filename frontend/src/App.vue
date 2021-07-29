@@ -1,23 +1,13 @@
 <template>
   <div id="app">
-      <itemPage />
+    <router-view />
   </div>
 </template>
 
 <script>
-import itemPage from "./components/itemPage";
 
 export default {
-  name: "app",
-  components: {
-    itemPage
-  },
-  data() {
-    return {
-      
-    };
-  },
-  methods: {}
+  name: 'App'
 };
 </script>
 
